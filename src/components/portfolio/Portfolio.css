@@ -1,0 +1,126 @@
+.portfolio{
+    padding: 100px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    h2{
+        padding-bottom: 20px;
+    }
+.portfolio-cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+    .card{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 5px;
+border: 1px solid red;  
+padding: 1rem ;
+background-color:#fff;  
+border-radius: 10px;
+border: 1px solid rgb(161, 155, 155);
+
+    .p-img{
+        background-color: rgb(248, 245, 245);
+        padding: 5px;
+        border-radius: 8px;
+
+        img{
+            width: 300px;
+            height: 150px;
+        }
+    }
+    a{
+        background-color: #fff;
+        font-size: 18px;
+    }
+    span{
+        display: flex;
+        gap: 7px;
+        padding: 7px 13px;
+        border-radius: 8px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 10px 0;
+
+
+        i{
+            font-size: 20px;
+        }
+    }
+}
+.cards-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card a{
+  margin: 10px 0;
+}
+
+   /* ======== Responsive Portfolio ======== */
+
+@media screen and (max-width: 992px) {
+    .portfolio-cards {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: start;
+      padding:0 0 0 5rem ;
+    }
+    .card {
+      width: 40%;
+    }
+  }
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    .portfolio-cards {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 2rem 0 3rem;
+    }
+    .card {
+        width: 100%; 
+    }
+  
+  }
+  
+
+
+
+  @media screen and (max-width: 576px) {
+    .portfolio-cards {
+      grid-template-columns: 1fr; 
+  }
+    .card {
+      width: 100%;
+      padding: 15px;
+
+      .p-img{
+        width: 100%;
+        padding: 10px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .card span {
+      gap: 5px;
+      padding: 5px 10px;
+    }
+    .card span i {
+      font-size: 16px;
+    }
+  }
+   
