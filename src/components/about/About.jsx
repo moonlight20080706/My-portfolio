@@ -1,7 +1,8 @@
 import './About.css'
 import AboutImg from '../../assets/men.jpg'
-import MyCv from '../../assets/CV-Mokhinur.pdf'
+import MyCv from '../../assets/CV-Moonlight.pdf'
 import Info from './Info'
+
 const About = () => {
   return (
     <div className="about section" id="about">
@@ -11,14 +12,12 @@ const About = () => {
             <img src={AboutImg} alt="" className='about__img'/>
             <div className="about__data">
                 <Info/>
-                <p class="about__description">  
+                <p className="about__description">  
                 I am a Junior Frontend Developer with knowledge of JavaScript and React.  
                 I enjoy web development and constantly strive to improve my skills.  
                 I aim to create beautiful and user-friendly interfaces.  
                 </p>
-                <a  href={MyCv} className="button">Dowland SV</a>
-
-
+                <a href={MyCv} className="button" download>Download CV</a>
             </div>
         </div>
     </div>
